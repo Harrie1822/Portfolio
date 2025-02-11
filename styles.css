@@ -2,11 +2,11 @@
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    color: #1d1d1f;
+    color: #f5f5f5;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: #ffffff;
+    background: #1e1e1e;
 }
 
 /* Sticky Header */
@@ -14,7 +14,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(30, 30, 30, 0.9);
     backdrop-filter: blur(10px);
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -32,11 +32,11 @@ header .container {
 header h1 {
     font-size: 1.5rem;
     margin: 0;
-    color: #1d1d1f;
+    color: #f5f5f5;
 }
 
 header nav a {
-    color: #1d1d1f;
+    color: #f5f5f5;
     text-decoration: none;
     margin: 0 15px;
     font-weight: 600;
@@ -54,8 +54,10 @@ header nav a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #f5f5f7;
-    color: #1d1d1f;
+    background: linear-gradient(135deg, #1e1e1e, #2c3e50);
+    color: #f5f5f5;
+    position: relative;
+    overflow: hidden;
 }
 
 .fullscreen h2 {
@@ -67,7 +69,7 @@ header nav a:hover {
     font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto 30px;
-    color: #6e6e73;
+    color: #f5f5f5;
 }
 
 .fullscreen .btn {
@@ -81,6 +83,24 @@ header nav a:hover {
 
 .fullscreen .btn:hover {
     background: #0097a7;
+}
+
+/* Animated Background */
+.animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #00bcd4, #0097a7);
+    z-index: -1;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* Portfolio Section */
@@ -123,7 +143,7 @@ header nav a:hover {
 
 .portfolio-text p {
     font-size: 1.1rem;
-    color: #6e6e73;
+    color: #f5f5f5;
     margin-bottom: 20px;
 }
 
@@ -149,7 +169,7 @@ header nav a:hover {
 }
 
 .blog-post {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -168,7 +188,7 @@ header nav a:hover {
 
 .blog-post p {
     font-size: 1rem;
-    color: #6e6e73;
+    color: #f5f5f5;
     margin-bottom: 20px;
 }
 
@@ -189,7 +209,7 @@ header nav a:hover {
 /* Contact Section */
 #contact {
     padding: 80px 0;
-    background: #ffffff;
+    background: #1e1e1e;
 }
 
 #contact h2 {
@@ -204,6 +224,8 @@ form input, form textarea, form button {
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #f5f5f5;
 }
 
 form button {
@@ -222,14 +244,14 @@ form button:hover {
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #f5f5f7;
-    border-top: 1px solid #ddd;
+    background: #1e1e1e;
+    border-top: 1px solid #333;
 }
 
 footer p {
     margin: 0;
     font-size: 0.9rem;
-    color: #6e6e73;
+    color: #f5f5f5;
 }
 
 /* Responsive Design */
