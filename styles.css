@@ -7,6 +7,31 @@ body {
     padding: 0;
     line-height: 1.6;
     background: #1e1e1e;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.light-theme {
+    background: #f5f5f7;
+    color: #1d1d1f;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: #0097a7;
 }
 
 /* Sticky Header */
@@ -18,6 +43,11 @@ header {
     backdrop-filter: blur(10px);
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+body.light-theme header {
+    background: rgba(255, 255, 255, 0.9);
 }
 
 header .container {
@@ -33,6 +63,11 @@ header h1 {
     font-size: 1.5rem;
     margin: 0;
     color: #f5f5f5;
+    transition: color 0.3s ease;
+}
+
+body.light-theme header h1 {
+    color: #1d1d1f;
 }
 
 header nav a {
@@ -41,6 +76,10 @@ header nav a {
     margin: 0 15px;
     font-weight: 600;
     transition: color 0.3s ease;
+}
+
+body.light-theme header nav a {
+    color: #1d1d1f;
 }
 
 header nav a:hover {
@@ -60,6 +99,11 @@ header nav a:hover {
     overflow: hidden;
 }
 
+body.light-theme .fullscreen {
+    background: linear-gradient(135deg, #f5f5f7, #e0e0e0);
+    color: #1d1d1f;
+}
+
 .fullscreen h2 {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -70,6 +114,10 @@ header nav a:hover {
     max-width: 600px;
     margin: 0 auto 30px;
     color: #f5f5f5;
+}
+
+body.light-theme .fullscreen p {
+    color: #1d1d1f;
 }
 
 .fullscreen .btn {
@@ -147,6 +195,10 @@ header nav a:hover {
     margin-bottom: 20px;
 }
 
+body.light-theme .portfolio-text p {
+    color: #1d1d1f;
+}
+
 .portfolio-text .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -192,6 +244,10 @@ header nav a:hover {
     margin-bottom: 20px;
 }
 
+body.light-theme .blog-post p {
+    color: #1d1d1f;
+}
+
 .blog-post .btn {
     display: inline-block;
     padding: 8px 16px;
@@ -210,87 +266,66 @@ header nav a:hover {
 #contact {
     padding: 80px 0;
     background: #1e1e1e;
+    transition: background 0.3s ease;
 }
 
-#contact h2 {
-    text-align: center;
-    margin-bottom: 40px;
+body.light-theme #contact {
+    background: #f5f5f7;
 }
 
-form input, form textarea, form button {
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
     background: rgba(255, 255, 255, 0.1);
     color: #f5f5f5;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-form button {
-    background: #00bcd4;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
+body.light-theme .contact-form input, body.light-theme .contact-form textarea {
+    background: rgba(30, 30, 30, 0.1);
+    color: #1d1d1f;
 }
 
-form button:hover {
-    background: #0097a7;
+.contact-form textarea {
+    height: 150px;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #1e1e1e;
-    border-top: 1px solid #333;
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-footer p {
+.contact-info .info-item i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #00bcd4;
+}
+
+.contact-info .info-item p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #f5f5f5;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header nav {
-        margin-top: 10px;
-    }
-
-    .portfolio-item, .portfolio-item.reverse {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .portfolio-image {
-        margin: 0 0 20px 0;
-    }
-
-    .portfolio-text {
-        padding: 0;
-    }
-
-    .fullscreen h2 {
-        font-size: 2rem;
-    }
-
-    .fullscreen p {
-        font-size: 1rem;
-    }
-
-    .feature h2 {
-        font-size: 2rem;
-    }
-
-    .feature p {
-        font-size: 1rem;
-    }
+body.light-theme .contact-info .info-item p {
+    color: #1d1d1f;
 }
+
+.contact-map iframe {
+    width: 100%;
+    height: 300px;
+    border: none}
