@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="home-container">
+        <div class="intro">
+            <img src="Images/myimage.jpg" alt="Your Image" class="intro-img">
+            <div>
+                <h1>Haripal Thakur</h1>
+                <p>
+                    Hi, I'm a <strong>Senior Power BI Developer</strong> with over 7 years of experience in data analysis, automation, and dashboard development. 
+                    I specialize in creating performance-optimized BI solutions and migrating existing BI suites to new applications. 
+                    I have a strong track record of delivering innovative solutions while collaborating with cross-functional teams across organizations.
+                </p>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slider-wrapper">
+                <img src="Images/chart2.png" alt="Portfolio Image 1">
+                <img src="Images/chart3.png" alt="Portfolio Image 2">
+                <img src="Images/chart4.png" alt="Portfolio Image 3">
+                <img src="Images/chart1.png" alt="Portfolio Image 4">
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="section-header">
+        <h2>Featured Projects</h2>
+    </div>
+    <div class="portfolio-slider">
+        <div class="project">
+            <img src="Images/chart2.png" alt="Project">
+            <div class="project-info">
+                <h3>Datorama to Power BI Migration</h3>
+                <p>Migrated 1,100+ reports to 14 dynamic Power BI reports, implementing Row-Level Security (RLS) and dynamic hierarchies.</p>
+                <span>Power BI</span>
+                <span>Dataflows</span>
+                <span>Power Automate</span>
+                <a href="project1.html"><button>View Project</button></a>
+            </div>
+        </div>
+        <div class="project">
+            <img src="Images/chart3.png" alt="Project">
+            <div class="project-info">
+                <h3>User Adoption Report</h3>
+                <p>Built a historical data pipeline using Dataflows and Power Automate to overcome Power BI’s 30-day data retention limit.</p>
+                <span>Power BI</span>
+                <span>Dataflows</span>
+                <span>Power Automate</span>
+                <a href="project2.html"><button>View Project</button></a>
+            </div>
+        </div>
+        <div class="project">
+            <img src="Images/chart4.png" alt="Project">
+            <div class="project-info">
+                <h3>CPG Sales Analysis</h3>
+                <p>Developed Power BI reports for inventory sales, volume, and weeks of cover analysis using the Haversine formula.</p>
+                <span>Power BI</span>
+                <span>SQL</span>
+                <span>TabularEditor</span>
+                <a href="project3.html"><button>View Project</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- Services Section -->
+  <section id="services">
+    <div class="section-header">
+      <h2>Services</h2>
+    </div>
+    <div class="services-container">
+      <div class="service">
+        <h3>Power BI Development</h3>
+        <p>Creating interactive and performance-optimized dashboards for data visualization.</p>
+      </div>
+      <div class="service">
+        <h3>Data Analysis</h3>
+        <p>Transforming raw data into actionable insights using advanced analytics tools.</p>
+      </div>
+      <div class="service">
+        <h3>Automation</h3>
+        <p>Automating repetitive tasks and workflows to improve efficiency.</p>
+      </div>
+      <div class="service">
+        <h3>Access Control</h3>
+        <p>Automating repetitive tasks and workflows to improve efficiency.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <div class="section-header">
+        <h2>Blog</h2>
+    </div>
+    <div class="blog-slider">
+        <div class="blog-card">
+            <img src="Images/chart2.png" alt="Blog">
+            <div>
+                <h3>Power BI Best Practices</h3>
+                <p>Learn how to optimize Power BI dashboards for performance and scalability.</p>
+                <span>Haripal Thakur</span>
+                <a href="blog1.html"><button>Read More</button></a>
+            </div>
+        </div>
+        <div class="blog-card">
+            <img src="Images/chart3.png" alt="Blog">
+            <div>
+                <h3>Data Migration Strategies</h3>
+                <p>Explore effective strategies for migrating BI suites to new platforms.</p>
+                <span>Haripal Thakur</span>
+                <a href="blog2.html"><button>Read More</button></a>
+            </div>
+        </div>
+        <div class="blog-card">
+            <img src="Images/chart4.png" alt="Blog">
+            <div>
+                <h3>Automating Data Workflows</h3>
+                <p>Discover how to automate repetitive tasks using Power Automate and Dataflows.</p>
+                <span>Haripal Thakur</span>
+                <a href="blog3.html"><button>Read More</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+  <section id="contact">
+    <div class="section-header">
+      <h2>Contact Me</h2>
+    </div>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Haripal Thakur</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
